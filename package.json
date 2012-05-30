@@ -1,16 +1,16 @@
 {
-	name: "form2json",
-	version: "0.0.2",
-	description: "Alternative decoder for form-urlencoded data",
-	homepage: "http://github.com/fgnass/form2json",
-	author: {
-		name: "Felix Gnass",
-		email: "felix.gnass@neteye.de",
-		url: "http://fgnass.posterous.com"
+	"name": "form2json",
+	"version": "0.0.2",
+	"description": "Alternative decoder for form-urlencoded data",
+	"homepage": "http://github.com/fgnass/form2json",
+	"author": {
+		"name": "Felix Gnass",
+		"email": "felix.gnass@neteye.de",
+		"url": "http://fgnass.posterous.com"
 	},
-	keywords: ["form", "urlencoded", "bodyDecoder", "querystring"],
-	main: "./index.js",
-	repository: {
+	"keywords": ["form", "urlencoded", "bodyDecoder", "querystring"],
+	"main": "./index.js",
+	"repository": {
 		"type": "git",
 		"url" : "http://github.com/fgnass/form2json.git"
 	}
