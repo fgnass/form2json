@@ -7,11 +7,16 @@
     "name": "Felix Gnass",
     "url": "http://fgnass.github.com"
   },
-  "keywords": ["form", "urlencoded", "bodyDecoder", "querystring"],
+  "keywords": [
+    "form",
+    "urlencoded",
+    "bodyDecoder",
+    "querystring"
+  ],
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url" : "http://github.com/fgnass/form2json.git"
+    "url": "http://github.com/fgnass/form2json.git"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha"
