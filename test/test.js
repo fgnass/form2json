@@ -1,10 +1,11 @@
-var form2json = require('form2json');
+var assert = require('assert')
+  , form2json = require('..')
 
 function test(input, json) {
-	return function(assert) {
-		var obj = typeof input == 'string' ? form2json.decode(input) : form2json.transfomr(input);
-		assert.eql(obj, json);
-	};
+	return function() {
+		var obj = typeof input == 'string' ? form2json.decode(input) : form2json.transform(input)
+		assert.deepEqual(obj, json)
+	}
 }
 
 module.exports = {
@@ -17,7 +18,7 @@ module.exports = {
 	array: test('a[0]=0&a[1]=1&a[2]=2', {a: [0, 1, 2]}),
 	reverseArray: test('a[2]=0&a[1]=1&a[0]=2', {a: [2, 1, 0]}),
 	orderedArray: test('a[x]=0&a[z]=1&a[y]=2', {a: [0, 1, 2]}),
-	arrayPush: test('a[]=0&a[]=1&a[]=2', {a: [0, 1, 2]}), 
+	arrayPush: test('a[]=0&a[]=1&a[]=2', {a: [0, 1, 2]}),
 	nestedArrays: test('a[0][0]=a00&a[0][1]=a01&a[1][0]=a10&a[1][1]=a11', {a: [['a00', 'a01'], ['a10', 'a11']]}),
 	unescapedEqualSigns: test('a=b=b&b=c=c', {a: 'b=b', b: 'c=c'})
-};
+}
