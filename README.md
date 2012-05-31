@@ -1,4 +1,4 @@
-# About
+[![Build Status](https://secure.travis-ci.org/fgnass/form2json.png)](http://travis-ci.org/fgnass/form2json)
 
 Form2json is a decoder for [x-www-form-urlencoded](http://www.w3.org/MarkUp/html-spec/html-spec_8.html#SEC8.2.1) data
 that supports complex structures. It uses simple dot-notation for nested properties and square brackets to denote arrays.
@@ -66,9 +66,3 @@ This feature is really useful, as it allows you to re-order the input fields on 
 	}
 
 In fact you may use *any non-numerical* value as index. All items having the *same* index will be grouped into one object.
-
-# Connect Middleware
-
-You can use form2json together with the bodyDecoder middleware:
-
-    require('connect')middleware.bodyDecoder.decode['application/x-www-form-urlencoded'] = require('form2json').decode;
