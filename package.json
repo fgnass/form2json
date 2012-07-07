@@ -1,6 +1,6 @@
 {
   "name": "form2json",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Advanced decoder for form-urlencoded data",
   "homepage": "http://github.com/fgnass/form2json",
   "author": {
