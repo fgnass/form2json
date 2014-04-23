@@ -19,9 +19,9 @@
     "url": "http://github.com/fgnass/form2json.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha --ui exports"
   },
   "devDependencies": {
-    "mocha": "0.x.x"
+    "mocha": "^1.18.2"
   }
 }
